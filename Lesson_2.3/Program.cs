@@ -12,8 +12,6 @@ internal class Program
         Console.WriteLine($"{dayOfWeek} -> {isWeekend}");
     }
 }
-
-
 /*
 if(dayOfWeek > 0 && dayOfWeek < 8) 
 {
