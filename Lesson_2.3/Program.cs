@@ -6,9 +6,7 @@ internal class Program
     {
         Console.WriteLine("enter the number of the day of the week: ");
         int dayOfWeek = Convert.ToInt32(Console.ReadLine());
-        string isWeekend = dayOfWeek > 0 && dayOfWeek < 8
-        ? dayOfWeek == 6 || dayOfWeek == 7 ? "yes" : "no" : "not day of the week";
-
+        string isWeekend = dayOfWeek > 0 && dayOfWeek < 8 ? dayOfWeek == 6 || dayOfWeek == 7 ? "yes" : "no" : "not day of the week";
         Console.WriteLine($"{dayOfWeek} -> {isWeekend}");
     }
 }
