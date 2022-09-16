@@ -9,9 +9,7 @@ internal class Program
     {
         Console.Write("enter a number : ");
         string? seriesOfNumbers = Console.ReadLine();
-
         seriesOfNumbers = seriesOfNumbers + ","; // an additional comma to indicate the end of the line
-
         // function for removing spaces from a string 
         string RemovingSpaces(string series)
         {
@@ -25,23 +23,18 @@ internal class Program
             }
             return seriesNew;
         }
-
         // function of checking for the correctness of the input
         void СheckNumber2(int series)
         {
-
             if (series == '0' || series == '1' || series == '2'
             || series == '3' || series == '4' || series == '5' || series == '6'
             || series == '7' || series == '8' || series == '9' || series == ','
             || series == '-');
-        
             else
             {
                 Console.WriteLine($"Character input error. Enter the numbers.");
-
             }
         }
-
         // function of creating and filling an array from a string
         int[] ArrayOfNumbers(string seriesNew)
         {
