@@ -24,7 +24,7 @@ internal class Program
             return seriesNew;
         }
         // function of checking for the correctness of the input
-        void СheckNumber2(int series)
+        void CheckNumber2(int series)
         {
             if (series == '0' || series == '1' || series == '2'
             || series == '3' || series == '4' || series == '5' || series == '6'
@@ -46,7 +46,7 @@ internal class Program
                 while (seriesNew[i] != ',' && i < seriesNew.Length)
                 {
                     seriesNew1 += seriesNew[i];
-                    СheckNumber2(seriesNew[i]);
+                    CheckNumber2(seriesNew[i]);
                     i++;
                 }
                 arrayOfNumbers[j] = Convert.ToInt32(seriesNew1);    // fills the array with values from the string
@@ -59,7 +59,7 @@ internal class Program
             return arrayOfNumbers;
         }
         // array output function for printing 
-        void PrintArry(int[] coll)
+        void PrintArray(int[] coll)
         {
             int count = coll.Length;
             int index = 0;
@@ -80,6 +80,6 @@ internal class Program
 
         int[] arrayOfNumbers = ArrayOfNumbers(seriesNew);
 
-        PrintArry(arrayOfNumbers);
+        PrintArray(arrayOfNumbers);
     }
 }
