@@ -4,11 +4,11 @@ internal partial class Program
 {
     private static void Main(string[] args)
     {
-        int n = InputInt("Введите положительное число");
+        int n = InputInt("Введите положительное число ");
         int m = 1;
         if (n < 1)
         {
-            Console.WriteLine("Ввели не положительное число");
+            Console.WriteLine("Ввели не положительное число ");
         }
         Console.WriteLine(NaturalNumber(n, m));
 
