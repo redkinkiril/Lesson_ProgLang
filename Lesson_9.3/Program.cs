@@ -1,39 +1,22 @@
 ﻿// Write a program for calculating the Ackerman function using recursion. Two non-negative numbers m and n are given.
 
-internal partial class Program
+Console.WriteLine("Введите два положительных числа: M и N.");
+int m = InputInt("Введите M: ");
+int n = InputInt("Введите N: ");
+Console.WriteLine($"A({m}, {n}) = {Akkerman(m, n)}");
+
+int InputInt(string output)
 {
-    private static void Main(string[] args)
-    {
-        Console.Write("Введите число M: ");
-        int m = Convert.ToInt32(Console.ReadLine());
+    Console.Write(output);
+    return int.Parse(Console.ReadLine());
+}
 
-        Console.Write("Введите число N: ");
-        int n = Convert.ToInt32(Console.ReadLine());
-
-        AkkermanFunction(m, n);
-
-
-        // вызов функции Аккермана
-        void AkkermanFunction(int m, int n)
-        {
-            Console.Write(Akkerman(m, n));
-        }
-
-        // функция Аккермана
-        int Akkerman(int m, int n)
-        {
-            if (m == 0)
-            {
-                return n + 1;
-            }
-            else if (n == 0 && m > 0)
-            {
-                return Akkerman(m - 1, 1);
-            }
-            else
-            {
-                return Akkerman(m - 1, Akkerman(m, n - 1));
-            }
-        }
-    }
+int Akkerman(int m, int n)
+{
+    if (m == 0)
+        return n + 1;
+    if (m > 0 && n == 0)
+        return Akkerman(m - 1, 1);
+    else
+        return Akkerman(m - 1, Akkerman(m, n - 1));
 }
