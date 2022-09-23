@@ -4,9 +4,9 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        Console.WriteLine("введите количество строк");
+        Console.WriteLine("enter the number of rows: ");
         int linesVol = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("введите количество столбцов");
+        Console.WriteLine("enter the number of columns: ");
         int columnsVol = Convert.ToInt32(Console.ReadLine());
         double[,] numbers = new double[linesVol, columnsVol];
         FillArrayRandomNumbers(numbers);
