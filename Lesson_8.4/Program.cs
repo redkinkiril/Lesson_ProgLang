@@ -31,7 +31,6 @@ internal partial class Program
             Console.WriteLine();
         }
 
-
         int[,,] Create3DMassive(int size1, int size2, int size3)
         {
             int[,,] array = new int[size1, size2, size3];
@@ -64,7 +63,6 @@ internal partial class Program
             }
             return array;
         }
-
 
         int InputInt(string output)
         {
